@@ -1,1 +1,8 @@
 place: String
+subject: String
+qualification: String
+grade: String
+
+start: DateTime
+has_ended: Boolean
+end: DateTime

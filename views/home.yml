@@ -6,5 +6,5 @@ context:
   dynamic:
     projects: session.query(Project).order_by(Project.start.desc()).all()
     about: session.query(About).first()
-    education: session.query(Education).all()
+    education: session.query(Education).order_by(Education.start.desc()).all()
     employment: session.query(Employment).all()

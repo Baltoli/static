@@ -1,1 +1,7 @@
-title: String
+company: String
+
+start: DateTime
+has_ended: Boolean
+end: DateTime
+
+about: Content
