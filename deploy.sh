@@ -1,0 +1,8 @@
+rm -rf ../Baltoli.github.io/*
+statik
+mv public/* ../Baltoli.github.io
+pushd ../Baltoli.github.io
+git add .
+git commit -m "Deploy"
+git push
+popd
