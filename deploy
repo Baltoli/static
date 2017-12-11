@@ -1,3 +1,5 @@
+#!/usr/bin/env zsh
+
 rm -rf ../Baltoli.github.io/*
 statik
 mv public/* ../Baltoli.github.io
