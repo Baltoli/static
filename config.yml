@@ -1,0 +1,5 @@
+project-name: Personal Site
+base-path: /
+context:
+  static:
+    site-title: Bruce Collie

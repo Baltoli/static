@@ -1,0 +1,7 @@
+path: /
+template: home
+context:
+  static:
+    page-title: Hello World!
+  dynamic:
+    projects: session.query(Project).all()
