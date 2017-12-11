@@ -4,4 +4,4 @@ start: DateTime
 has_ended: Boolean
 end: DateTime
 
-about: Content
+about: Text
