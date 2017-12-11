@@ -1,11 +1,52 @@
 {% extends "base.html" %}
 
 {% block body %}
-  <h1>Welcome to My Blog!</h1>
-  <p>These are my projects!</p>
-  <ul>
-    {% for project in projects %}
-      <li>{{ project.title }}</li>
-    {% endfor %}
-  </ul>
+  <h1>Bruce Collie</h1>
+
+  <div class="about">
+    <h2>About Me</h2>
+    <p>
+      {{ about.content }}
+    </p>
+  </div>
+
+  <div class="projects">
+    <h2>Projects</h2>
+    <ul>
+      {% for project in projects %}
+        <li>
+          <div class="project-title">
+            {{ project.title }}
+          </div> 
+
+          <div class="project-dates">
+            {{ project.start|date("%B %Y") }} &ndash;
+            {% if project.has_ended %}
+              {{ project.end|date("%B %Y") }}
+            {% endif %}
+          </div>
+
+          <div class="project-links">
+            {% for link in project.links %}
+              <a href="{{ link.dest }}">{{ link.title }}</a>
+            {% endfor %}
+          </div>
+
+          <div class="project-about">
+            {{ project.about }}
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+
+  <div class="employment">
+    <h2>Work</h2>
+    <ul>
+      {% for job in employment %}
+        <li>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endblock %}

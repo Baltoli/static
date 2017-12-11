@@ -1,0 +1,16 @@
+- pk: tesla-diss
+  title: Dissertation
+  dest: assets/files/part_3.pdf
+  project: tesla
+- pk: tesla-github
+  title: Github
+  dest: https://github.com/cadets/tesla-static-analysis
+  project: tesla
+- pk: pcl-diss
+  title: Dissertation
+  dest: assets/files/part_2.pdf
+  project: pcl
+- pk: pcl-github
+  title: Github
+  dest: https://github.com/baltoli/pcl
+  project: pcl

@@ -4,4 +4,7 @@ context:
   static:
     page-title: Hello World!
   dynamic:
-    projects: session.query(Project).all()
+    projects: session.query(Project).order_by(Project.start.desc()).all()
+    about: session.query(About).first()
+    education: session.query(Education).all()
+    employment: session.query(Employment).all()
